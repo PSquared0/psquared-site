@@ -7,13 +7,7 @@
   <script src="https://code.jquery.com/jquery.js"></script>
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/main.js"></script>
-
-  <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
-
-  <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
   <script>
   </script>
 </head>
@@ -21,22 +15,21 @@
 <body>
 
   <!-- HEADER START -->
-
   <header id="header">
+
     <div class="content">
-      <div id="logo"><a href=""> Psquared </a></div>
       <nav id="nav">
         <ul>
-          <li><a href="#slide1" class="active" title="Next Section">Slide 1</a></li>
-          <li><a href="#slide2" title="Next Section">Slide 2</a></li>
-          <li><a href="#slide3" title="Next Section">Slide 3</a></li>
-          <li><a href="#slide4" title="Next Section">Slide 4</a></li>
-          <li><a href="#slide5" title="Next Section">Slide 5</a></li>
+          <li><a href="#slide1" class="active" title="Next Section">HOME</a></li>
+          <li><a href="#slide2" title="Next Section">WORK</a></li>
+          <li><a href="#slide3" title="Next Section">BLOG</a></li>
+          <li><a href="#slide4" title="Next Section">ABOUT</a></li>
+          <li><a href="#slide5" title="Next Section">CONTACT</a></li>
         </ul>
       </nav>
     </div>
   </header>
-
+  <div id="logo"><a href=""></a><img src="img/psquared.svg" /></div>
 
   <!--- SLIDES START --->
 
@@ -45,12 +38,11 @@
       <div id="christmas_tree"> </div>
       <div id="snowflakes1"></div>
       <div id="snowflakes2"></div>
-      <h2>MERRY</h2>
-      <h1>CHRISTMAS</h1>
+      <h2>PASCALE</h2>
+      <h2>PIERRE</h2>
       <div id="divider"> </div>
-      <h3>HAPPY NEW YEAR </h3>
+      <h3>SOFTWARE DEVELOPER</h3>
       <div id="ribbon"></div>
-      <div id="new_year"> </div>
     </div>
   </div>
   <div id="slide2">
@@ -74,21 +66,41 @@
   <div id="slide4">
     <div class="content">
       <div class="quotes_container">
-        <h3 class="quotes">“Christmas doesn't come from a store, maybe Christmas perhaps means a little bit more....” </h3>
-        <img src="img/dr-seuss.png" align="left" />
-        <h4 class="author_name_gray">Dr. Seuss </h4>
+        <h3 class="quotes">I’m a front end developer.
+I like to make app and sites user friendly and efficient.
+When I’m not coding, you can find me at the dog park or watching anime.
+Want to work together? I’d love to hear from you. </h3>
+        <img src="img/pascale.png" align="left" />
+        <h4 class="author_name_gray"></h4>
       </div>
     </div>
   </div>
   <div id="slide5">
     <div class="content">
       <div class="quotes_container">
-        <h3 class="quotes">“My idea of Christmas, whether old-fashioned or modern, is very simple: loving others. Come to think of it, why do we have to wait for Christmas to do that?” </h3>
-        <img src="img/bob.png" align="left" />
-        <h4 class="author_name_white">Bob Hope </h4>
+        <form class="form" action="/post" method="post">
+
+          <h2>CONTACT ME</h2>
+          <!-- just a title -->
+          <div class="wrapper">
+            <i class="fa fa-user"></i>
+            <!-- user icon for name field -->
+            <input class="input-group" type="password" name="name" placeholder="Name (required)"></div>
+          <div class="wrapper">
+            <i class="fa fa-envelope-o"></i>
+            <!-- envelope icon for email field -->
+            <input class="input-group" type="text" name="email" placeholder="E-Mail (required)"></div>
+          <div class="wrapper">
+            <i class="fa fa-file-text-o"></i>
+            <!-- file text icon for subject field -->
+            <input class="input-group" type="text" name='subject' placeholder="Subject (optional)"></div>
+          <textarea class="textarea" placeholder="Write your message here..."></textarea>
+          <button type="submit" href="mailto:pascalelpierre@gmail.com" class="send-btn">Send</button>
+        </form>
       </div>
-      <div id="copyright"><a href="https://1stwebdesigner.com/">Copyright 1stwebdesigner.com </a></div>
     </div>
+    <div id="copyright"><a href="https://pascale-pierre.com/">Copyright pascale pierre pascale-pierre.com </a></div>
+  </div>
   </div>
   <!--- SLIDES END --->
 

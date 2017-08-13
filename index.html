@@ -2,108 +2,208 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Psquared</title>
-  <script src="https://code.jquery.com/jquery.js"></script>
   <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="http://pascale-pierre.com/favicon.ico" />
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+  <script src="galleria/galleria-1.5.7.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="js/main.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
-  <script>
-  </script>
 </head>
 
 <body>
 
+
+
   <!-- HEADER START -->
   <header id="header">
 
+
     <div class="content">
-      <nav id="nav">
+      <nav id="nav" class="topnav">
+
         <ul>
           <li><a href="#slide1" class="active" title="Next Section">HOME</a></li>
-          <li><a href="#slide2" title="Next Section">WORK</a></li>
-          <li><a href="#slide3" title="Next Section">BLOG</a></li>
+          <li><a href="#slide2" title="Next Section">DEVELOPMENT</a></li>
+          <li><a href="#slide3" title="Next Section">DESIGN</a></li>
           <li><a href="#slide4" title="Next Section">ABOUT</a></li>
           <li><a href="#slide5" title="Next Section">CONTACT</a></li>
+          <li><a href="javascript:void(0);" class="icon" class="fa fa-bars" aria-hidden="true" onclick="myFunction()"></a></li>
         </ul>
+
       </nav>
     </div>
   </header>
-  <div id="logo"><a href=""></a><img src="img/psquared.svg" /></div>
+  <div id="logo"><img src="img/psquared.png" /></div>
 
   <!--- SLIDES START --->
 
   <div id="slide1">
     <div class="content">
-      <div id="christmas_tree"> </div>
-      <div id="snowflakes1"></div>
-      <div id="snowflakes2"></div>
-      <h2>PASCALE</h2>
-      <h2>PIERRE</h2>
-      <div id="divider"> </div>
-      <h3>SOFTWARE DEVELOPER</h3>
-      <div id="ribbon"></div>
+      <h2 class="name">PASCALE</h2>
+      <h2 class="name">PIERRE</h2>
+      <div class="name" id="divider"> </div>
+      <h3 class="name" >SOFTWARE DEVELOPER</h3>
     </div>
   </div>
   <div id="slide2">
-    <div class="content">
-      <div class="quotes_container">
-        <h3 class="quotes">“Then the Grinch thought of something he hadn't before! What if Christmas, he thought, doesn't come from a store. What if Christmas...perhaps...means a little bit more!”</h3>
-        <img src="img/dr-seuss.png" align="left" />
-        <h4 class="author_name_gray">Dr. Seuss </h4>
-      </div>
-    </div>
+    <div class="galleria1"></div>
   </div>
   <div id="slide3">
-    <div class="content">
-      <div class="quotes_container">
-        <h3 class="quotes">“I truly believe that if we keep telling the Christmas story, singing the Christmas songs, and living the Christmas spirit, we can bring joy and happiness and peace to this world.” </h3>
-        <img src="img/norman.png" align="left" />
-        <h4 class="author_name_white">Norman Vincent Peale </h4>
-      </div>
-    </div>
+    <div class="galleria"></div>
   </div>
   <div id="slide4">
     <div class="content">
       <div class="quotes_container">
-        <h3 class="quotes">I’m a front end developer.
+          <img class="profile" src="img/pascale_alt.svg" align="left" />
+        <h3 class="quotes">Im a front end developer.
 I like to make app and sites user friendly and efficient.
 When I’m not coding, you can find me at the dog park or watching anime.
 Want to work together? I’d love to hear from you. </h3>
-        <img src="img/pascale.png" align="left" />
-        <h4 class="author_name_gray"></h4>
+
+
       </div>
     </div>
   </div>
   <div id="slide5">
-    <div class="content">
-      <div class="quotes_container">
-        <form class="form" action="/post" method="post">
+    <div class="content1">
 
-          <h2>CONTACT ME</h2>
-          <!-- just a title -->
-          <div class="wrapper">
-            <i class="fa fa-user"></i>
-            <!-- user icon for name field -->
-            <input class="input-group" type="password" name="name" placeholder="Name (required)"></div>
-          <div class="wrapper">
-            <i class="fa fa-envelope-o"></i>
-            <!-- envelope icon for email field -->
-            <input class="input-group" type="text" name="email" placeholder="E-Mail (required)"></div>
-          <div class="wrapper">
-            <i class="fa fa-file-text-o"></i>
-            <!-- file text icon for subject field -->
-            <input class="input-group" type="text" name='subject' placeholder="Subject (optional)"></div>
-          <textarea class="textarea" placeholder="Write your message here..."></textarea>
-          <button type="submit" href="mailto:pascalelpierre@gmail.com" class="send-btn">Send</button>
-        </form>
-      </div>
+      <img class="austin" src="img/austin.png" align="left" />
+      <div class="iconcircles">
+
+
+      <a href="https://www.linkedin.com/in/pascale-pierre-1a544214/" target="_blank" class="fa fa-linkedin fa-3x"></a>
+      <a href="https://twitter.com/ms_psquared" target="_blank" class="fa fa-twitter fa-3x"></a>
+      <a href="https://github.com/PSquared0" target="_blank" class="fa fa-github fa-3x"></a>
+      <a href="mailto:pascalelpierre@gmail.com" target="_blank" class="fa fa-envelope fa-3x"></a>
+      <div id="copyright"><a href="https://pascale-pierre.com/">Copyright 2017 Pascale Pierre. All Rights Reserved. </a></div>
+  </div>
     </div>
-    <div id="copyright"><a href="https://pascale-pierre.com/">Copyright pascale pierre pascale-pierre.com </a></div>
+</div>
+  </div>
+
   </div>
   </div>
   <!--- SLIDES END --->
 
+  <script>
+    var design = [{
+        image: 'img/MEAT_rebrand2014_hires.gif',
+        title: 'Meat Signs',
+        description: 'Concepts I worked on for the Meat sign package. ',
+        big: 'img/MEAT_rebrand2014_hires.gif',
+        link: 'img/MEAT_rebrand2014_hires.gif',
+      },
+      {
+        image: 'img/loveaffair.jpg',
+        title: 'Love Affair',
+        description: 'Anniversary Poster for Whole Foods Market SoMa',
+        big: 'img/loveaffair.pdf',
+        link: 'img/loveaffair.jpg',
+
+      },
+      {
+        image: 'img/allstar.jpg',
+        title: 'Marketing Allstar Awards',
+        description: 'Awards for the exceptional individuals on the Marketing team',
+        big: 'img/allstar.jpg',
+        link: 'img/allstar.jpg',
+      },
+      {
+        image: 'img/app.png',
+        title: 'Rename AccessVia Poster',
+        description: 'A poster I created to get team members involved in the new interation of Access Via (future SLAW)',
+        big: 'img/app.png',
+        link: 'img/app.png',
+
+      },
+      {
+        image: 'img/bbq.png',
+        title: 'BBQ Poster',
+        description: 'Artwork for a BBQ for the team members of the Sonoma store',
+        big: 'img/bbq.png',
+        link: 'img/bbq.png',
+      },
+
+      {
+        image: 'img/cheese.png',
+        title: 'Cheese Sign Mockup',
+        description: 'Concept for the a proposed cheese template',
+        big: 'img/cheese.png',
+        link: 'img/cheese.png',
+      },
+      {
+        image: 'img/cheese2.jpg',
+        title: 'Cheese Sign Final',
+        description: 'Executed version of cheese signs. Worked with the developement team to design, test  and refine in SLAW (then AccessVia). I managed the sign package from conceptualization, all though the approval procces and onto store execution.',
+        big: 'img/cheese2.jpg',
+        link: 'img/cheese2.jpg',
+      },
+      {
+        image: 'img/magnet.png',
+        title: 'Magnet',
+        description: 'A designer needed some help catching up on work so i pitched in to help out and work on this project for them',
+        big: 'img/magnet.png',
+        link: 'img/magnet.png',
+      },
+      {
+        image: 'img/trades.jpg',
+        title: 'Sean of All Trades',
+        description: 'Logo design for a Bay Area eneral contractor',
+        big: 'img/trades.jpg',
+        link: 'img/trades.jpg',
+      },
+      {
+        image: 'img/swap.png',
+        title: 'Sean of All Trades',
+        description: 'Design for clothing swap event',
+        big: 'img/swap.png',
+        link: 'img/swap.png',
+      },
+
+    ];
+
+    var dev = [{
+        image: 'img/pascale.gif',
+        title: 'Reroute App',
+        description: 'Reroute is a peer to peer bus rating app for San Francisco Muni. As an avid non driver, the developer has amassed a lot of information about what buses to take and when. This app will allow others to share with info so users can get from point a to point b.',
+        big: 'mg/loveaffair.pdf',
+        link: 'http://rerouteapp.herokuapp.com/',
+
+
+      },
+
+    ];
+
+
+    (function() {
+      Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+      Galleria.configure({
+        transition: 'fadeslide',
+        transitionSpeed: 1000,
+        carousel: false,
+        autoplay: 6000,
+        responsive: true,
+        height: 0.5,
+        debug: false
+
+      });
+      Galleria.run('.galleria1');
+      Galleria.run('.galleria');
+    }());
+
+    Galleria.run('.galleria1', {
+      dataSource: dev
+    });
+    Galleria.run('.galleria', {
+      dataSource: design,
+      fullscreenDoubleTap: true
+    });
+  </script>
 
 </body>
 

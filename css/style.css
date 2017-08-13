@@ -1,3 +1,6 @@
+
+
+
 @font-face {
   font-family: 'Jaapokki';
   src: url('fonts/jaapokki-regular.ttf');
@@ -20,17 +23,48 @@ body {
 
 }
 
+.quotes {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 36px;
+  text-align: center;
+  margin: 5px 0;
+  padding: 0;
+  position: relative;
+  color: #223843;
 
+}
+
+@media only screen
+and (max-width: 420px) {
+
+  .quotes {
+    font-family: 'Josefin Sans', sans-serif;
+      font-size: 1em;
+      text-align: center;
+      color: #223843;
+   }
+
+}
 
 h2 {
   font-family: "Jaapokki-subtract";
   font-weight: normal;
-  font-size: 125px;
+  font-size: 8em;
   text-align: center;
   line-height: 90%;
   color: #ef9a8b;
   margin: auto;
   padding: 0;
+
+}
+
+@media only screen
+and (max-width: 520px) {
+
+   h2 {
+      font-size: 4em;
+      text-align: center;
+   }
 
 }
 
@@ -43,8 +77,19 @@ h3 {
   margin: 5px 0;
   padding: 0;
   position: relative;
-  
+
 }
+
+@media only screen
+and (max-width: 420px) {
+
+   h3 {
+      font-size: 2em;
+      text-align: center;
+   }
+
+}
+
 
 .center {
   margin: 0 auto;
@@ -53,6 +98,38 @@ h3 {
 .content {
   margin: 0 auto;
   width: 960px;
+}
+
+@media only screen
+and (max-width: 420px) {
+
+   .content {
+     margin: 0 auto;
+     width: 420px;
+   }
+
+}
+
+
+.content1 {
+  margin: 0 auto;
+  width: 960px;
+  margin-left: 130px;
+margin-bottom: 90px;
+
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+}
+
+@media only screen
+and (max-width: 420px) {
+
+   .content1 {
+     margin: 0 auto;
+     width: 420px;
+   }
 
 }
 
@@ -66,14 +143,23 @@ h3 {
   height: 80px;
   position: fixed;
   margin-top: 30px;
-  z-index: 1;
+  z-index: 3;
+
 
 }
+@media (max-width: 320px){
+	header{
+		/* Reverse the axis of the header, making it vertical. */
+		flex-direction: column;
+		/* Align items to the begining (the left) of the header. */
+		align-items: flex-start;
+	}}
 
 #nav {
-  width: 410px;
-  float: left;
+  width: 600px;
+  float: right;
   margin-top: 20px;
+  overflow: hidden;
 }
 
 #logo {
@@ -83,11 +169,12 @@ h3 {
   display: block;
   text-decoration: none;
   border: 0;
-  width: 100px;
-  height: 100px;
+  width: 20px;
+  height: 20px;
   padding: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 4;
+
 
 }
 
@@ -125,82 +212,39 @@ h3 {
   opacity: 1;
 }
 
-.quotes {
-  font-family: 'Goudy Bookletter 1911', serif;
-  font-weight: normal;
-  font-size: 30px;
-  text-align: left;
-  margin: 50px auto;
-}
 
-.author_name_white {
-  font-family: "Wellfleet";
-  margin: 70px 0 0 75px;
-  color: #fff;
-  font-size: 20px;
-}
-
-.author_name_gray {
-  font-family: "Wellfleet";
-  margin: 70px 0 0 75px;
-  color: #94a4a4;
-  font-size: 20px;
-}
 
 .quotes_container {
   width: 800px;
   margin: 0 auto;
 }
 
-#christmas_tree {
-  background: url('../img/christmas-tree.png')no-repeat;
-  width: 48px;
-  height: 77px;
-  margin: 0 auto;
-  position: relative;
-  bottom: -35px;
+@media only screen
+and (max-width: 420px) {
+
+.quotes_container {
+     margin: 0 auto;
+     width: 420px;
+   }
+
 }
 
 #divider {
-  background: url('../img/divider.png')no-repeat;
+  background: url('../img/divider.svg')no-repeat;
   width: 300px;
   height: 35px;
-  margin: 0px auto 27px auto;
+  margin: 17px auto 27px auto;
 }
 
-#ribbon {
-  background: url('../img/ribbon.png')no-repeat;
-  width: 599px;
-  height: 148px;
-  margin: 0 auto;
-  display: block;
-  position: relative;
-  top: -58px;
+@media only screen
+and (max-width: 420px) {
+
+   #divider {
+     width: 170px;
+     height: 15px;
+   }
 
 }
-
-#snowflakes1 {
-  background: url('../img/snowflakes.png')no-repeat;
-  width: 24px;
-  height: 21px;
-  margin: 0 auto;
-  display: block;
-  position: relative;
-  bottom: -54px;
-  left: -102px;
-}
-
-#snowflakes2 {
-  background: url('../img/snowflakes.png')no-repeat;
-  width: 24px;
-  height: 21px;
-  margin: 0 auto;
-  display: block;
-  position: relative;
-  bottom: -33px;
-  right: -100px;
-}
-
 #slide1, #slide2 {
   width: 100%;
 }
@@ -214,6 +258,21 @@ h3 {
   background-size: cover;
 }
 
+@media only screen
+and (max-width: 420px) {
+
+   #slide1 {
+
+     width: 100%;
+    height: 400px;
+    background-size: cover;
+
+   }
+
+}
+#s
+
+
 #slide2 {
   background-color: #fff;
   color: #eff1f3;
@@ -223,6 +282,8 @@ h3 {
   padding: 200px 0;
 }
 
+
+
 #slide3 {
   background: url(../img/slide3.jpg) 50% 0 no-repeat fixed;
   color: #fff;
@@ -231,12 +292,15 @@ h3 {
   background-size: cover;
 }
 
+
+
 #slide4 {
   background-color: #eff1f3;
   color: #333333;
   height: 300px;
   padding: 200px 0;
 }
+
 
 #slide5 {
   background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
@@ -248,6 +312,7 @@ h3 {
   z-index: 1;
 }
 
+
 #copyright {
   color: #eff1f3;
   font-family: "Wellfleet";
@@ -258,7 +323,7 @@ h3 {
 
 #copyright a {
   text-decoration: none;
-  color: #fff;
+  color: #223843;;
 }
 
 .textarea {
@@ -287,17 +352,118 @@ h3 {
 }
 
 .textarea:active {
+
   border-color: #006699;
 }
 
-.send-btn {
-  padding: 0.5em 4em;
-  font-size: 1em;
-  margin-top: 2em;
-  background-color: #FFF;
-  color: #ef9a8b;
-  border: none;
-  border-radius: 0.3em;
-  margin-left: 37em;
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  flex-direction: column;
 
+
+
+}
+
+.iconcircles .fa {
+  flex-direction: column;
+    padding-right: : 770px;
+    margin-left: 14px;
+      margin-right: : 50px;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+
+.fa-linkedin {
+    background: #fff;
+    color: #ef9a8b;
+    padding: 20px;
+
+}
+
+.fa-twitter {
+    background: #fff;
+    color: #ef9a8b;
+}
+
+.fa-github {
+    background: #fff;
+    color: #ef9a8b;
+}
+
+.fa-envelope {
+    background: #fff;
+    color: #ef9a8b;
+}
+
+.profile{
+  width: 300px;
+  height: auto;
+  padding-right: 40px;
+
+}
+
+@media only screen
+and (max-width: 420px) {
+
+  .profile{
+    width: 200px;
+    height: auto;
+
+  }
+
+}
+
+.austin{
+  width: 430px;
+  height: auto;
+  padding-right: 90px;
+}
+
+@media only screen
+and (max-width: 420px) {
+
+  .austin {
+     width: 400px;
+     height: auto;
+   }
+
+}
+.galleria {
+  max-width: 900px;
+  height: 600px;
+  margin: auto;
+}
+.galleria1 {
+  max-width: 900px;
+  height: 600px;
+  margin: auto;
+  margin-bottom: 200px;
+}
+
+.galleria-container {
+  background: none;
+
+}
+
+
+.galleria-theme-classic .galleria-info-link {
+    background-position: -669px -5px;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #ef9a8b;
 }

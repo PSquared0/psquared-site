@@ -8,6 +8,7 @@ $(document).ready(function() {
       var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
       if ($target) {
         var targetOffset = $target.offset().top;
+
         $(this).click(function() {
           $("#nav li a").removeClass("active");
           $(this).addClass('active');
@@ -21,3 +22,10 @@ $(document).ready(function() {
   });
 
 });
+
+// $(window).resize(function () {
+//     var viewportWidth = $(window).width();
+//     if (viewportWidth < 700) {
+//             $("..galleria-container notouch galleria-theme-classic").rstyle.width = "400px";;
+//     }
+// });

@@ -1,3 +1,55 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* CSS RESET ÷ */
+
 @font-face {
   font-family: 'Jaapokki';
   src: url('fonts/jaapokki-regular.ttf');
@@ -13,28 +65,31 @@
   src: url('fonts/jaapokkisubtract-regular.ttf');
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
 
 .quotes {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 36px;
   text-align: center;
   margin: 5px 0;
-  padding: 0;
+  padding: 20;
   position: relative;
   color: #223843;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 525px) {
+  body {
+   width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 525px) {
   .quotes {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.2em;
     text-align: center;
     color: #223843;
+    display: flex;
     flex-direction: column;
     padding: 50px;
   }
@@ -43,6 +98,7 @@ body {
 .quotes_container {
   width: 800px;
   margin: 0 auto;
+   display: flex;
   flex-direction: column;
 }
 
@@ -50,6 +106,7 @@ body {
   .quotes_container {
     margin: 0 auto;
     width: 320px;
+     display: flex;
     flex-direction: column;
     /* Align items to the begining (the left) of the header. */
     align-items: flex-start;
@@ -67,7 +124,7 @@ h2 {
   padding: 0;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 525px) {
   h2 {
     font-size: 4em;
     text-align: center;
@@ -85,7 +142,7 @@ h3 {
   position: relative;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 525px) {
   h3 {
     font-size: 2em;
     text-align: center;
@@ -98,13 +155,13 @@ h3 {
 
 .content {
   margin: 0 auto;
-  width: 960px;
+  width: 100%;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 525px) {
   .content {
     margin: 0 auto;
-    width: 425px;
+    width: 100%;
     display: flex;
   }
 }
@@ -120,10 +177,10 @@ h3 {
   left: 0;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 525px) {
   .content1 {
     margin: 0 auto;
-    width: 425px;
+    width: 300px;;
     margin-left: 0px;
     flex-direction: column;
     /* Align items to the begining (the left) of the header. */
@@ -140,10 +197,10 @@ h3 {
   width: 960px;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 525px) {
   .content2 {
     margin: 0 auto;
-    width: 425px;
+    width: 300px;
   }
 }
 
@@ -156,18 +213,19 @@ h3 {
   background-color: #223843;
   height: 80px;
   position: fixed;
-  margin-top: 30px;
+  display: flex;
+  /* margin-top: 30px; */
   z-index: 3;
 }
 
-@media (max-width: 505px) {
-  header {
+@media (max-width: 525px) {
+  #header {
     /* Reverse the axis of the header, making it vertical. */
-    flex-direction: column;
+    /* flex-direction: column; */
     /* Align items to the begining (the left) of the header. */
-    align-items: flex-start;
-    height: 40px;
-    width: 50%;
+ 
+    width: 100%;
+  
   }
 }
 
@@ -204,7 +262,9 @@ h3 {
 
 @media only screen and (max-width: 505px) {
   #logo {
-    margin-left: 15px;
+    margin: 55px 0 55px 0;
+  
+  
   }
 }
 
@@ -224,6 +284,7 @@ h3 {
   margin: 0 auto;
   list-style: none;
 }
+
 
 #nav li {
   margin-top: 9px;
@@ -249,7 +310,10 @@ h3 {
     text-decoration: none;
     padding-left: 19px;
     font-family: 'Josefin Sans', sans-serif;
+    
+    
   }
+\
 }
 
 #nav li a.active {
@@ -288,13 +352,14 @@ h3 {
   margin: 0;
   padding: 200px 0 260px 0;
   background-size: cover;
+  padding: 270px 0 0 0;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 450px) {
   #slide1 {
-    width: 100%;
-    height: 400px;
-    background-size: cover;
+    width: auto;
+    height: 700px;
+
   }
 }
 
@@ -458,9 +523,11 @@ h3 {
   color: #ef9a8b;
 }
 .profile {
-  width: 370px;
+  width: 400px;
   height: auto;
-  padding-right: 40px;
+  padding-top: 15px;
+  padding-right: 45px;
+  padding-bottom: : 25px;
 }
 @media only screen and (max-width: 425px) {
   .profile {

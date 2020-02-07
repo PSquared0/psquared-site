@@ -2,133 +2,298 @@
 <html lang="en">
 
 <head>
-
-  <meta charset="UTF-8"name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Psquared</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/gjz0iei.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
   <link rel="icon" type="image/x-icon" href="http://pascale-pierre.com/favicon.ico" />
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
-  <script src="galleria/galleria-1.5.7.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Raleway+Dots&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="js/main.js"></script>
 </head>
 
 <body>
-
-
-
-  <!-- HEADER START -->
-
-
-
-
-
-
-      <nav id="nav" class="topnav">
-
-        <ul>
-          <li><a href="#slide1" class="active" title="Next Section">HOME</a></li>
-          <li><a href="#slide2" title="Next Section">DEVELOPMENT</a></li>
-          <li><a href="#slide3" title="Next Section">DESIGN</a></li>
-          <li><a href="#slide4" title="Next Section">ABOUT</a></li>
-          <li><a href="#slide5" title="Next Section">CONTACT</a></li>
-
-        </ul>
-
-      </nav>
-  
-
-  <!-- <div id="logo"><img class="logo" src="img/psquared.png" /></div> -->
-
+  <!-- NAV START -->
+  <a href="#slide1" class="active scrolltop" title="Next Section">
+    <div class='scroll icon'>
+      <i class=" fa fa-arrow-up"></i>
+    </div>
+  </a>
+  <div class="menu">
+    <div class="label">menu</div>
+    <div class="spacer"></div>
+    <div class="item"><a href="#slide1" class="Next Section" title="Next Section"><span>home</span></a></div>
+    <div class="item"><a href="#slide2" title="Next Section"><span>design</span></a></div>
+    <div class="item"><a href="#slide3" title="Next Section"><span>web</span></a></div>
+    <div class="item"><a href="#slide4" title="Next Section"><span>about</span></a></div>
+    <div class="item"><a href="#slide5" title="Next Section"><span>contact</span></a></div>
+  </div>
 
   <!--- SLIDES START --->
-
   <div id="slide1">
     <div class="content2">
-      <h2 class="name">PASCALE</h2>
-      <h2 class="name">PIERRE</h2>
-      <div class="name" id="divider"> </div>
-      <h3 class="name">SOFTWARE <br> DEVELOPER</h3>
+      <h2 class="name">pascale pierre</h2>
+
+      <div class="divider" id="divider"> </div>
+      <h3 class="jobtitle">software developer</h3>
     </div>
   </div>
-  <div id="slide2" >
-<div class="design-section">
-  
-  <ul id="design" class="design-grid"">
-    <li>
-      <div class="design-box design-img-1">
-        <a href="#">
-        <div class="design-info">
-          <h3>Feathers</h3>
-          <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
-        </div></a>
-      </div>
-    </li>
-    <li>
-      <div class="design-box design-img-2">
-        <a href="#">
-        <div class="design-info">
-          <h3>Feathers</h3>
-          <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
-        </div></a>
-      </div>
-    </li>
-    <li>
-      <div class="design-box design-img-3">
-        <a href="#">
-        <div class="design-info">
-          <h3>Feathers</h3>
-          <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
-        </div></a>
-      </div>
-    </li>
-    <li>
-      <div class="design-box design-img-4">
-        <a href="#">
-        <div class="design-info">
-          <h3>FEATHERS</h3>
-          <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
-        </div></a>
-      </div>
-    </li>
-    <li>
-      <div class="design-box design-img-5">
-        <a href="#">
-        <div class="design-info">
-          <h3>Feathers</h3>
-          <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
-        </div></a>
-      </div>
-    </li>
-    <li>
-      <div class="design-box design-img-6">
-        <a href="#">
-        <div class="design-info">
-          <h3>Feathers</h3>
-          <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
-        </div></a>
-      </div>
-    </li>
-  </ul>
-</div>
-</div>
+  <div id="slide2">
+    <div class="image-section">
+      <ul id="image" class="image-grid">
+        <li>
+
+          <div id="myBtn" class="openmodal myBtn image-box image-img-1">
+            <div class="image-info">
+              <h3>Love</h3>
+              <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="img" src="img/loveaffiar.png" alt="love">
+            </div>
+          </div>
+
+        </li>
+        <li>
+          <div id="myBtn" class="openmodal myBtn image-box image-img-2">
+            <div class="image-info">
+              <h3>Fire</h3>
+              <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="img" src="img/tshirt.jpg" alt="magnet">
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div id="myBtn" class="openmodal myBtn image-box image-img-3">
+            <div class="image-info">
+              <h3>Berry Good</h3>
+              <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="img" src="img/billboard.jpg" alt="baord">
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div id="myBtn" class="openmodal myBtn image-box image-img-4">
+            <div class="image-info">
+              <h3>Rainbow</h3>
+              <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="img" src="img/businesscard.jpg" alt="Card">
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div id="myBtn" class="openmodal myBtn image-box image-img-5">
+            <div class="image-info">
+              <h3>Magnetic</h3>
+              <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="img" src="img/magnet.png" alt="Magnet">
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div id="myBtn" class="openmodal myBtn image-box image-img-6">
+            <div class="image-info">
+              <h3>Say Cheese</h3>
+              <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="img" src="img/cheese2.jpg" alt="Cheese">
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div id="myBtn" class="openmodal myBtn image-box image-img-7">
+            <div class="image-info">
+              <h3>Handy</h3>
+              <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="img" src="img/trades.png" alt="Trades">
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div id="myBtn" class="openmodal myBtn image-box image-img-8">
+            <div class="image-info">
+              <h3>Prime</h3>
+              <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="img" src="img/Iphone.png" alt="Prime">
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div id="myBtn" class="openmodal myBtn image-box image-img-9">
+            <div class="image-info">
+              <h3>Ink</h3>
+              <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="img" src="img/ink.png" alt="ink">
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div id="myBtn" class="openmodal myBtn image-box image-img-10">
+            <div class="image-info">
+              <h3>Winner</h3>
+              <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="img" src="img/Awards.png" alt="winner">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div id="myBtn" class="openmodal myBtn image-box image-img-11">
+            <div class="image-info">
+              <h3>Summer</h3>
+              <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="img" src="img/Sticker.png" alt="sticker">
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  </div>
   <div id="slide3">
-    <div class="galleria"></div>
+    <div class="image-section">
+      <ul id="image" class="image-grid">
+        <li>
+
+          <div id="myBtn" class="openmodal myBtn image-box image-img-21">
+            <div class="image-info">
+              <h3>Maps</h3>
+              <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="img" src="img/scratch.gif" alt="love">
+            </div>
+          </div>
+
+        </li>
+        <li>
+          <div id="myBtn" class="openmodal myBtn image-box image-img-22">
+            <div class="image-info">
+              <h3>Ride</h3>
+              <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="img" src="img/pascale.gif" alt="magnet">
+            </div>
+          </div>
+        </li>
+
+        <!-- <li>
+          <div id="myBtn" class="openmodal myBtn image-box image-img-23">
+            <div class="image-info">
+              <h3>Berry Good</h3>
+              <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            Modal content
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="img" src="img/billboard.jpg" alt="board">
+            </div>
+          </div>
+        </li> -->
+
+
+      </ul>
+    </div>
+  </div>
   </div>
   <div id="slide4">
 
     <div class="quotes_container">
-      <img class="profile" src="img/pascale_alt.svg" align="left" />
-      <h3 class="quotes"><span style= " font-family:Jaapokki;text-transform: uppercase; font-weight:bold; color:#ef9a8b; font-size:1.3em; line-height: .9;" >Hello.</span> <span style=" font-family:Jaapokki-subtract;text-transform: uppercase; font-weight:bold; color:#ef9a8b; opacity: .4; font-size:1.3em; line-height: .9;">I am a developer & designer</span></span>
-      </br> I enjoy the solution oriented aspect of coding. When not working on efficient solutions for complex problems, I can be found at a movie screening or at trivia. </h3>
-
-
+      <img class="profile" src="img/pascale_alt.svg" />
+      <h3 class="quotes">
+        <span> Hello. I am a </span></h3>
+      <span class="title"> developer & designer</span>
+      <h3 class="quotes">
+        <span>
+          I enjoy the solution oriented aspect of coding. When not working on efficient solutions for complex
+          problems, I can be found at a movie screening or at trivia.</span> </h3>
     </div>
-
   </div>
-</div>
+  </div>
   <div id="slide5">
 
     <div class="content1" class="quotes_container">
@@ -139,7 +304,9 @@
         <a href="https://twitter.com/ms_psquared" target="_blank" class="fa fa-twitter fa-3x"></a>
         <a href="https://github.com/PSquared0" target="_blank" class="fa fa-github fa-3x"></a>
         <a href="mailto:pascalelpierre@gmail.com" target="_top" class="fa fa-envelope fa-3x"></a>
-        <div id="copyright">Copyright 2019 Pascale Pierre. All Rights Reserved. </a>
+
+
+        <div id="copyright">Copyright 2020 Pascale Pierre. All Rights Reserved. </a>
         </div>
       </div>
     </div>
@@ -147,139 +314,22 @@
 
   <!--- SLIDES END --->
 
-  <script>
-    var design = [{
-        image: 'img/MEAT_rebrand2014_hires.gif',
-        title: 'Meat Signs',
-        description: 'Concepts I worked on for the Meat sign package. ',
-        big: 'img/MEAT_rebrand2014_hires.gif',
-        link: 'img/MEAT_rebrand2014_hires.gif',
-      },
-      {
-        image: 'img/loveaffair.jpg',
-        title: 'Love Affair',
-        description: 'Anniversary Poster for Whole Foods Market SoMa',
-        big: 'img/loveaffair.pdf',
-        link: 'img/loveaffair.jpg',
-
-      },
-      {
-        image: 'img/allstar.jpg',
-        title: 'Marketing Allstar Awards',
-        description: 'Awards for the exceptional individuals on the Marketing team',
-        big: 'img/allstar.jpg',
-        link: 'img/allstar.jpg',
-      },
-      {
-        image: 'img/app.png',
-        title: 'Rename AccessVia Poster',
-        description: 'A poster I created to get team members involved in the new interation of Access Via (future SLAW)',
-        big: 'img/app.png',
-        link: 'img/app.png',
-
-      },
-      {
-        image: 'img/bbq.png',
-        title: 'BBQ Poster',
-        description: 'Artwork for a BBQ for the team members of the Sonoma store',
-        big: 'img/bbq.png',
-        link: 'img/bbq.png',
-      },
-
-      {
-        image: 'img/cheese.png',
-        title: 'Cheese Sign Mockup',
-        description: 'Concept for the a proposed cheese template',
-        big: 'img/cheese.png',
-        link: 'img/cheese.png',
-      },
-      {
-        image: 'img/cheese2.jpg',
-        title: 'Cheese Sign Final',
-        description: 'Executed version of cheese signs. Worked with the developement team to design, test  and refine in SLAW (then AccessVia). I managed the sign package from conceptualization, all though the approval procces and onto store execution.',
-        big: 'img/cheese2.jpg',
-        link: 'img/cheese2.jpg',
-      },
-      {
-        image: 'img/magnet.png',
-        title: 'Magnet',
-        description: 'Magnet design for Pizza Venue',
-        big: 'img/magnet.png',
-        link: 'img/magnet.png',
-      },
-      {
-        image: 'img/trades.jpg',
-        title: 'Sean of All Trades',
-        description: 'Logo design for Bay Area general contractor',
-        big: 'img/trades.jpg',
-        link: 'img/trades.jpg',
-      },
-      {
-        image: 'img/swap.png',
-        title: 'WFM Clothing Swap',
-        description: 'Design for clothing swap event',
-        big: 'img/swap.png',
-        link: 'img/swap.png',
-      },
-
-      {
-        image: 'img/tshirt.jpg',
-        title: '',
-        description: 'Tee Design for NYC Non Profit',
-        big: 'img/tshirt.jpg',
-        link: 'img/tshirt.jpg',
-      }
-
-    ];
-
-    var dev = [{
-        image: 'img/pascale.gif',
-        title: 'Reroute App',
-        description: 'Reroute is a peer to peer bus rating app for San Francisco Muni. As an avid non driver, the developer has amassed a lot of information about what buses to take and when. This app will allow others to share with info so users can get from point a to point b.',
-        big: 'img/pascale.jpg',
-        link: 'http://rerouteapp.herokuapp.com/',
-
-
-      },
-      {
-        image: 'img/hero.png',
-        title: 'Scratch & Map',
-        description: 'Reroute is a peer to peer bus rating app for San Francisco Muni. As an avid non driver, the developer has amassed a lot of information about what buses to take and when. This app will allow others to share with info so users can get from point a to point b.',
-        big: 'img/scratch.mov',
-        link: 'https://scratchandmap.club/',
-
-
-      }
-      
-
-    ];
-
-
-    (function() {
-      Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
-      Galleria.configure({
-        transition: 'fadeslide',
-        transitionSpeed: 1000,
-        carousel: false,
-        autoplay: 6000,
-        responsive: true,
-        height: 0.5,
-        debug: false
-
-      });
-      Galleria.run('.galleria1');
-      Galleria.run('.galleria');
-    }());
-
-    Galleria.run('.galleria1', {
-      dataSource: dev
-    });
-    Galleria.run('.galleria', {
-      dataSource: design,
-      fullscreenDoubleTap: true
-    });
-  </script>
-
 </body>
+<script>
+  var modals = document.getElementsByClassName('modal');
+  // Get the button that opens the modal
+  var btns = document.getElementsByClassName("openmodal");
+  var spans = document.getElementsByClassName("close");
+  for (let i = 0; i < btns.length; i++) {
+    btns[i].onclick = function () {
+      modals[i].style.display = "block";
+    }
+  }
+  for (let i = 0; i < spans.length; i++) {
+    spans[i].onclick = function () {
+      modals[i].style.display = "none";
+    }
+  }
+</script>
 
 </html>

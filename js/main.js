@@ -20,12 +20,14 @@ $(document).ready(function() {
       }
     }
   });
-
 });
 
-// $(window).resize(function () {
-//     var viewportWidth = $(window).width();
-//     if (viewportWidth < 700) {
-//             $("..galleria-container notouch galleria-theme-classic").rstyle.width = "400px";;
-//     }
-// });
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 50 ) {
+      $('.active.scrolltop:hidden').stop(true, true).fadeIn();
+  } else {
+      $('.active.scrolltop').stop(true, true).fadeOut();
+  }
+});
+$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top},"1000");return false})})
+

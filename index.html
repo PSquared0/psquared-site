@@ -218,11 +218,11 @@
             </div>
           </div>
         </li>
-
       </ul>
     </div>
   </div>
   </div>
+
   <div id="slide3">
     <div class="image-section">
       <ul id="image" class="image-grid">
@@ -238,11 +238,12 @@
             <!-- Modal content -->
             <div class="modal-content">
               <span class="close">&times;</span>
-              <img class="img" src="img/scratch.gif" alt="love">
+              <img onclick="NewTab()" class="img" src="img/scratch_edited.gif" alt="scratch">
             </div>
           </div>
-
+          </a>
         </li>
+
         <li>
           <div id="myBtn" class="openmodal myBtn image-box image-img-22">
             <div class="image-info">
@@ -258,7 +259,6 @@
             </div>
           </div>
         </li>
-
         <!-- <li>
           <div id="myBtn" class="openmodal myBtn image-box image-img-23">
             <div class="image-info">
@@ -274,46 +274,74 @@
             </div>
           </div>
         </li> -->
-
-
       </ul>
     </div>
   </div>
   </div>
   <div id="slide4">
-
     <div class="quotes_container">
       <img class="profile" src="img/pascale_alt.svg" />
       <h3 class="quotes">
-        <span> Hello. I am a </span></h3>
-      <span class="title"> developer & designer</span>
+        <span> Hello, I am a </span></h3>
+      <span class="title"> developer & designer.</span>
       <h3 class="quotes">
         <span>
-          I enjoy the solution oriented aspect of coding. When not working on efficient solutions for complex
-          problems, I can be found at a movie screening or at trivia.</span> </h3>
+          I love coming up with creative solutions to all sorts of challenges.
+          When I am not coding you can find me watching anime, playing games in VR or taking my dog to the creek.</span>
+      </h3>
     </div>
   </div>
   </div>
   <div id="slide5">
-
     <div class="content1" class="quotes_container">
-
-      <img class="austin" src="img/austin.png" align="left" />
-      <div class="iconcircles">
+      <div class="contact">
+        <img class="austin" src="img/austin.png" />
+        <div class="container">
+          <ul id="menu">
+            <a class="menu-button icon-plus" href="#menu" title="Show navigation"></a>
+            <a class="menu-button icon-minus" href="#0" title="Hide navigation"></a>
+            <li class="menu-item">
+              <a href="#menu">
+                <span class="fa fa-github"></span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#menu">
+                <span class="fa fa-linkedin"></span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#menu">
+                <span class="fa fa-instagram"></span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#menu">
+                <span class="fa fa-twitter"></span>
+              </a>
+            </li>
+          </ul>
+          <div class="content">
+            <div class="text">
+              <h3> Click circle!</h3>
+              <h6>Tada...!</h6>
+            
+            </div>
+            
+          </div>
+        </div>
+        <div id="copyright">Copyright 2020 Pascale Pierre. All Rights Reserved. </a>
+        </div>
+      </div>
+      <!-- <div class="iconcircles">
         <a href="https://www.linkedin.com/in/pascale-pierre-1a544214/" target="_blank" class="fa fa-linkedin fa-3x"></a>
         <a href="https://twitter.com/ms_psquared" target="_blank" class="fa fa-twitter fa-3x"></a>
         <a href="https://github.com/PSquared0" target="_blank" class="fa fa-github fa-3x"></a>
         <a href="mailto:pascalelpierre@gmail.com" target="_top" class="fa fa-envelope fa-3x"></a>
-
-
-        <div id="copyright">Copyright 2020 Pascale Pierre. All Rights Reserved. </a>
-        </div>
-      </div>
+ -->
+  
     </div>
-  </div>
-
-  <!--- SLIDES END --->
-
+    <!--- SLIDES END --->
 </body>
 <script>
   var modals = document.getElementsByClassName('modal');
@@ -330,6 +358,9 @@
       modals[i].style.display = "none";
     }
   }
+  function NewTab() {
+    window.open(
+      "https://www.geeksforgeeks.org", "_blank");
+  }
 </script>
-
 </html>

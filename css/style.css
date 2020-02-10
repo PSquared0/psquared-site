@@ -750,7 +750,7 @@ span {
 
 #slide5 {
 	background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
-	height: 350px;
+	height: 50%;
 	margin: 0 auto;
 	padding: 150px 0;
 	color: #fff;
@@ -784,6 +784,10 @@ span {
 		text-align: center;
 	}
 }
+.contact{
+  display: flex;
+  flex-direction: row;
+}
 
 .textarea {
 	width: 54em;
@@ -795,6 +799,7 @@ span {
 	border-radius: 0.3em;
 	background-color: #eff1f3;
 }
+
 
 .input-group:hover {
 	border-color: #3399ff;

@@ -191,50 +191,50 @@ table {
 }
 .image-box.image-img-1 {
 
-	background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), url('../img/love2.png');
+	background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.10)), url('../img/love2.png');
 }
 .image-box.image-img-2 {
   width: 100%;
   object-fit: contain;
-	background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), url('../img/flame.png');
+	background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.10)), url('../img/flame.png');
 }
 
 .image-box.image-img-3 {
-	background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), url('../img/berry.png');
+	background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.10)), url('../img/berry.png');
 }
 .image-box.image-img-4 {
-	background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), url('../img/card.png');
+	background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.10)), url('../img/card.png');
 }
 .image-box.image-img-5 {
-	background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), url('../img/magnet.png');
+	background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.10)), url('../img/magnet.png');
 }
 .image-box.image-img-6 {
-	background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), url('../img/cheese3.png');
+	background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.10)), url('../img/cheese3.png');
 }
 .image-box.image-img-7 {
-	background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), url('../img/trades2.png');
+	background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.10)), url('../img/trades2.png');
 }
 .image-box.image-img-8 {
-	background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), url('../img/prime2.png');
+	background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.10)), url('../img/prime2.png');
 }
 .image-box.image-img-9 {
-	background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), url('../img/ink2.png');
+	background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.10)), url('../img/ink2.png');
 }
 .image-box.image-img-10 {
-	background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), url('../img/winner2.png');
+	background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.10)), url('../img/winner2.png');
 }
 .image-box.image-img-11 {
-	background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), url('../img/summer.png');
+	background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.10)), url('../img/summer.png');
 }
 
 
 .image-box.image-img-21 {
-	background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), url('../img/hero.png');
+	background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.10)), url('../img/hero.png');
 }
 
 
 .image-box.image-img-22 {
-	background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), url('../img/bus.png');
+	background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.10)), url('../img/bus.png');
 }
 
 
@@ -315,6 +315,8 @@ img {
 	height: auto;
 }
 
+
+
 /* DESIGN GALLERY ÷ */
 
 h2 {
@@ -342,31 +344,39 @@ h2 {
   
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 525px) {
 	#divider {
-		width: 170px;
-		height: 15px;
+		width: 85%;
 	}
 }
+
+
 
 .content2 {
 height: 40%;
 height: auto;
 }
 
+
 .name {
   font-family: 'Cheddar-Jack';
-  background: -webkit-linear-gradient(#F1C6A5, #D4625F);
+  /* background: -webkit-linear-gradient(#F1C6A5, #D4625F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-	font-weight: normal;
+  display: -webkit-flex; */
+
 	font-size: 10vw;
-  display: flex;
- justify-content: center;
+	display: flex;
+  justify-content: center;
  height: 15vh;
  padding-bottom: 5%;
- z-index: 10;
+z-index: 10;
+}
 
+@media only screen and (max-width: 525px) {
+	.name {
+		font-size: 19.5vw;
+	}
 }
 
 .divider {
@@ -374,16 +384,13 @@ height: auto;
   display: flex;
  justify-content: center;
  height: 15vh;
- padding-bottom: 5%;
+
  z-index: 10;
 
 }
 
 .jobtitle {
-  font-family: 'Cheddar-Jack';
-  background: -webkit-linear-gradient(#F1C6A5, #D4625F);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: 'Raleway';
 	font-weight: normal;
 	font-size: 2.5vw;
   display: flex;
@@ -391,6 +398,13 @@ height: auto;
  /* height: 15vh;
  padding-bottom: 5%; */
  z-index: 10;
+}
+
+
+@media only screen and (max-width: 525px) {
+	.jobtitle {
+		font-size: 6.5vw;
+	}
 }
 span.title {
   font-family: 'Cheddar-Jack';
@@ -408,6 +422,8 @@ span.title {
   line-height: 1.3;
 }
 
+
+
 h3.quotes {
 	font-family: 'Raleway', sans-serif;
   font-size: 1.6vw;
@@ -418,11 +434,7 @@ h3.quotes {
   line-height: 3;
 }
 
-@media only screen and (max-width: 525px) {
-	body {
-		width: 100%;
-	}
-}
+
 
 @media only screen and (max-width: 525px) {
 	.quotes {
@@ -496,14 +508,13 @@ h3 {
 }
 
 .content1 {
-	margin: 0 auto;
-	width: 960px;
-	margin-left: 130px;
-	margin-bottom: 90px;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	width: 90%;
+	margin: 5% 0 0 5%;
+	display: flex;
+	flex-direction: column;
+
+
+
 }
 
 @media only screen and (max-width: 525px) {
@@ -524,7 +535,7 @@ h3 {
 .clear {
 	clear: both;
 }
-a{
+a {
   color: inherit;
   text-decoration: none;
 }
@@ -579,7 +590,7 @@ a{
 
 .menu {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.3vw;
+  font-size: 2.1vw;
   color: #ef9a8b;
   display: inline-block;
   cursor: pointer;
@@ -588,6 +599,19 @@ a{
   top: 20px;
   left: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    .menu{ /* suppress hover effect on devices that don't support hover fully */
+   
+  font-size: 4.1vw;
+  color: black;
+
+    }
+}
+
+
+
+
 .menu:hover {
   pointer-events: all;
 }
@@ -711,10 +735,20 @@ span {
 	background-size: cover;
 }
 
+@media (min-width: 451px) {
+	#slide1{
+		background-size: cover;
+		width: 40%;
+		height: auto;
+	 
+	}
+  }
+
 @media only screen and (max-width: 450px) {
 	#slide1 {
 		width: 100%;
-		height: 700px;
+		height: auto;
+		background: url('../img/slide1mobile.jpg') 50% 0 no-repeat fixed;
 	}
 }
 
@@ -741,6 +775,7 @@ span {
 	display: flex;
 }
 
+
 @media only screen and (max-width: 425px) {
 	#slide4 {
 		padding: 100px 0;
@@ -750,14 +785,24 @@ span {
 
 #slide5 {
 	background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
-	height: 50%;
+	height: 100%;
 	margin: 0 auto;
-	padding: 150px 0;
+	padding: 0px 0;
 	color: #fff;
 	background-size: cover;
 	z-index: 1;
 	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
+@media only screen and (max-width: 425px) {
+	#slide{
+		
+		flex-direction: column;
+		}
+	}
+
+
 
 @media only screen and (max-width: 425px) {
 	#slide5 {
@@ -767,15 +812,22 @@ span {
 }
 
 #copyright {
-	color: #000;
-	font-family: 'Josefin Sans', sans-serif;
-	margin-top: 290px;
-	text-align: center;
+  color: #000;
+  text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 90px;
+  text-align: center;
+  font-size: .8vw;
 }
 
 #copyright a {
 	text-decoration: none;
 	color: #223843;
+}
+.contact{
+	
+	width: 50%;
+	padding-bottom: 10%;
 }
 
 @media only screen and (max-width: 525px) {
@@ -784,10 +836,84 @@ span {
 		text-align: center;
 	}
 }
-.contact{
-  display: flex;
-  flex-direction: row;
+
+input[type=text], select, textarea, input[type=email]{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: vertical;
+  }
+
+form label{
+	color: #ef9a8b;
+	font-family: 'Raleway', sans-serif;
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+	
 }
+
+button {
+	background-color:#ef9a8b;
+	color: white;
+	padding: 10px 50px;
+	border: none;
+	border-radius: 4px;
+	margin-top: 5%;
+	cursor: pointer;
+	float: right;
+	font-family: 'Raleway', sans-serif;
+  }
+
+  .container {
+	border-radius: 5px;
+	background-color: #eff1f3;
+	padding: 20px;
+	margin: 10% 0 0 5%;
+
+  }
+
+  .col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+	.col-25, .col-75, input[type=submit] {
+	  width: 100%;
+	  margin-top: 0;
+	}
+  }
+.chat {
+	font-weight: 400;
+	color: #ef9a8b;
+	font-family: 'Raleway', sans-serif;
+	font-size: 3vw;
+	margin-top: 5%;	
+	text-align: center;
+  }
+
+ form p {
+	padding: 10px;
+  }
+
 
 .textarea {
 	width: 54em;
@@ -815,9 +941,6 @@ span {
 	box-shadow: 0em 0em 0.2em #3399ff;
 }
 
-.textarea:active {
-	border-color: #006699;
-}
 
 .fa {
 	padding: 20px;
@@ -843,23 +966,9 @@ span {
 	}
 }
 
-.iconcircles .fa {
-	padding-right: 770px;
-	margin-left: 14px;
-	margin-right: 50px;
-	margin-bottom: 20px;
-}
-@media only screen and (max-width: 425px) {
-	.iconcircles .fa {
-		flex-direction: row;
-		margin-left: 20px;
-		margin-right: 30px;
-		margin-bottom: 10px;
-		margin-top: 20px;
-	}
-}
 
-/* Add a hover effect if you want */
+
+
 .fa:hover {
 	opacity: 0.7;
 }
@@ -879,7 +988,12 @@ span {
 	background: #fff;
 	color: #ef9a8b;
 }
-.profile {
+
+.iconcontacts{
+	display: flex;
+	flex-direction: row;
+}
+/* .profile {
 
 	display: flex;
     justify-content: center;
@@ -891,8 +1005,8 @@ img.profile {
 	height: auto;
 	display: flex;
     justify-content: center;
-    /* align-items: center; */
-}
+    align-items: center; */
+/* } */
 @media only screen and (max-width: 425px) {
 	.profile {
 		width: 300px;
@@ -903,10 +1017,68 @@ img.profile {
 	}
 }
 .austin {
-	width: 430px;
-	height: auto;
-	padding-right: 90px;
+  width: 75%;
+  height: auto;
+  padding-top: 5%;
 }
+.iconcircles{
+margin: 0% 0 0 10%;
+display: flex;
+flex-direction: column-reverse;
+}
+
+
+
+
+.hiddenimg {
+	display: none;
+	margin-left: 35vw;
+
+	
+  }
+  
+  .hiddentxt {
+	font-weight: bold;
+	color: #ef9a8b;
+
+
+	
+  }
+  
+  .hiddentxt a {
+	color: #ef9a8b;
+	text-decoration: none;
+	cursor: default;	
+	
+  }
+
+  
+  
+  .hiddentxt:hover ~ .hiddenimg {
+	display: block;
+	
+  }
+  
+  .circular--portrait {
+	position: relative;
+	width: 15vw;
+	height: 15vw;
+	overflow: hidden;
+	border-radius: 50%;
+
+
+  }
+  .circular--portrait img {
+	width: 90%;
+	height: 90%;
+	object-fit: cover;
+
+	
+  }
+
+ 
+
+/* }
 @media only screen and (max-width: 425px) {
 	.austin {
 		width: auto;
@@ -915,4 +1087,6 @@ img.profile {
 		padding-bottom: 70px;
 		padding-left: 70px;
 	}
-}
+} */
+
+
